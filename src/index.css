@@ -1,3 +1,5 @@
+/* CSS reset */
+
 *,
 *::before,
 *::after {
@@ -60,4 +62,16 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* Basic Settings */
+
+body {
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: auto;
 }
