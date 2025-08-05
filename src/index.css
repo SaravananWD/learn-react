@@ -69,8 +69,9 @@ h6 {
   --primary-text: #333;
   --primary-bg: #f0f0f0;
 
-  --base-font-setting: 130%/1.5 "Helvetica", sans-serif;
-  --head-font: Georgia, serif;
+  --base-font-setting: 120%/1.5 "Helvetica", sans-serif;
+  --base-font: "Helvetica", sans-serif;
+  --head-font: "Noto Sans";
 }
 
 /* Basic Settings */
@@ -86,7 +87,10 @@ body {
   margin: auto;
 }
 
-p,
+p {
+  margin-bottom: 1.2rem;
+  font: var(--base-font-setting);
+}
 h1,
 h2,
 h3,
@@ -94,4 +98,6 @@ h4,
 h5,
 h6 {
   margin-bottom: 1.2rem;
+  font-family: var(--head-font);
+  margin-top: 2.5rem;
 }

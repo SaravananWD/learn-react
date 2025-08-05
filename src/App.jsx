@@ -30,5 +30,30 @@ const BODY = (
       iste nihil ab totam corrupti quidem. Molestiae, cumque omnis fugit, id
       aliquam nisi voluptate, ea et similique mollitia harum assumenda!
     </p>
+    <h2>Lorem ipsum dolor sit amet consectetur</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum
+      iste nihil ab totam corrupti quidem. Molestiae, cumque omnis fugit, id
+      aliquam nisi voluptate, ea et similique mollitia harum assumenda!
+    </p>
+    <h3>Lorem ipsum dolor sit amet consectetur</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum
+      iste nihil ab totam corrupti quidem. Molestiae, cumque omnis fugit, id
+      aliquam nisi voluptate, ea et similique mollitia harum assumenda!
+    </p>
+    <h4>Lorem ipsum dolor sit amet consectetur</h4>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum
+      iste nihil ab totam corrupti quidem. Molestiae, cumque omnis fugit, id
+      aliquam nisi voluptate, ea et similique mollitia harum assumenda!
+    </p>
+    <h5>Lorem ipsum dolor sit amet consectetur</h5>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum
+      iste nihil ab totam corrupti quidem. Molestiae, cumque omnis fugit, id
+      aliquam nisi voluptate, ea et similique mollitia harum assumenda!
+    </p>
+    <h6>Lorem ipsum dolor sit amet consectetur</h6>
   </>
 );
