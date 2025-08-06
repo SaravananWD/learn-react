@@ -110,8 +110,18 @@ body {
   margin: auto;
 }
 
-p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
   margin-bottom: 1.2rem;
+}
+
+p {
   line-height: var(--base-line-height);
   max-width: 700px;
 }
@@ -122,6 +132,5 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 1.2rem;
   font-family: var(--heading-font);
 }
