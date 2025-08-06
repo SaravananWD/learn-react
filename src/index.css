@@ -50,6 +50,7 @@ h6 {
 p {
   text-wrap: pretty;
 }
+
 h1,
 h2,
 h3,
@@ -64,7 +65,7 @@ h6 {
   isolation: isolate;
 }
 
-/* CSS Variables */
+/* Font Imports */
 
 @font-face {
   font-family: "Bitter";
@@ -75,6 +76,8 @@ h6 {
   font-family: "Montserrat";
   src: url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
 }
+
+/* CSS Variables */
 
 :root {
   --primary-text: #333333;
@@ -97,14 +100,16 @@ body {
 }
 
 .wrapper {
-  max-width: 800px;
+  max-width: 1030px;
   margin: auto;
 }
 
 p {
   margin-bottom: 1.2rem;
   line-height: var(--base-line-height);
+  max-width: 700px;
 }
+
 h1,
 h2,
 h3,
