@@ -126,7 +126,7 @@ h5,
 h6,
 p,
 button {
-  margin-bottom: 1.2rem;
+  margin-bottom: var(--space-5);
 }
 
 p {
@@ -141,4 +141,5 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font);
+  /* margin-top: var(--space-3); collapsing causes inconsistent output - fix! */
 }
