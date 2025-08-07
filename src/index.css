@@ -86,14 +86,30 @@ h6 {
 /* CSS Variables */
 
 :root {
-  --primary-text: #333333;
-  --primary-bg: #f0f0f0;
+  /* colors */
+  --text-color-primary: #333333;
+  --bg-color-primary: #f0f0f0;
 
+  /* typography */
   --heading-font: "Bitter", serif;
-  --base-font: "Montserrat", sans-serif;
-  --base-font-size: 120%;
-  --base-line-height: 1.7;
+  --text-font: "Montserrat", sans-serif;
+  --text-font-weight: 500; /* Since "Montserrat" is a light font. */
 
+  --type-size-xs: 12px;
+  --type-size-sm: 16px;
+  --type-size-md: 20px;
+  --type-size-lg: 24px;
+  --type-size-xl: 32px;
+  --type-size-xxl: 40px;
+
+  --type-height-xs: 20px;
+  --type-height-sm: 28px;
+  --type-height-md: 32px;
+  --type-height-lg: 36px;
+  --type-height-xl: 44px;
+  --type-height-xxl: 48px;
+
+  /* for margin and padding */
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -102,15 +118,31 @@ h6 {
   --space-6: 24px;
   --space-7: 28px;
   --space-8: 32px;
+
+  /* 
+  default         diff      adjusted      line-height
+  h1: 38.4        -0        40            48 
+  h2: 28.8        -9.6      32            44
+  h3: 22.464      -6.336    24            36
+  h4: 19.2        -3.264    20            32
+  h5: 15.936      -3.264    16            28
+  h6: 12.864      -3.072    12            16
+  */
+
+  /* 
+  variable names uses a --<element>-<property>-<variation> format. Eg. --type-size-sm
+  */
 }
 
 /* Basic Settings */
 
 body {
-  color: var(--primary-text);
-  background-color: var(--primary-bg);
-  font-family: var(--base-font);
-  font-size: var(--base-font-size);
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  font-family: var(--text-font);
+  font-weight: var(--text-font-weight);
+  font-size: var(--type-size-sm);
+  line-height: var(--type-height-sm);
 }
 
 .wrapper {
@@ -130,7 +162,6 @@ button {
 }
 
 p {
-  line-height: var(--base-line-height);
   max-width: 700px;
 }
 
@@ -142,4 +173,29 @@ h5,
 h6 {
   font-family: var(--heading-font);
   /* margin-top: var(--space-3); collapsing causes inconsistent output - fix! */
+}
+
+h1 {
+  font-size: var(--type-size-xxl);
+  line-height: var(--type-height-xxl);
+}
+h2 {
+  font-size: var(--type-size-xl);
+  line-height: var(--type-height-xl);
+}
+h3 {
+  font-size: var(--type-size-lg);
+  line-height: var(--type-height-lg);
+}
+h4 {
+  font-size: var(--type-size-md);
+  line-height: var(--type-height-md);
+}
+h5 {
+  font-size: var(--type-size-sm);
+  line-height: var(--type-height-sm);
+}
+h6 {
+  font-size: var(--type-size-xs);
+  line-height: var(--type-height-xs);
 }
