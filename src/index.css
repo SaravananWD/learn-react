@@ -144,7 +144,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1028px;
+  max-width: 1028px; /* 4 x 257 = 1028 */
   margin: auto;
 }
 
@@ -154,8 +154,7 @@ h3,
 h4,
 h5,
 h6,
-p,
-button {
+p {
   margin-bottom: var(--space-5);
 }
 
@@ -173,22 +172,27 @@ h1 {
   font-size: var(--type-size-xxl);
   line-height: var(--type-height-xxl);
 }
+
 h2 {
   font-size: var(--type-size-xl);
   line-height: var(--type-height-xl);
 }
+
 h3 {
   font-size: var(--type-size-lg);
   line-height: var(--type-height-lg);
 }
+
 h4 {
   font-size: var(--type-size-md);
   line-height: var(--type-height-md);
 }
+
 h5 {
   font-size: var(--type-size-sm);
   line-height: var(--type-height-sm);
 }
+
 h6 {
   font-size: var(--type-size-xs);
   line-height: var(--type-height-xs);
@@ -199,3 +203,8 @@ p {
   font-size: var(--type-size-sm);
   line-height: var(--type-height-sm);
 }
+/* 
+.btn.primary {
+  border-radius: var(--space-1);
+  background-color: var(--color-one);
+} */

@@ -1,15 +1,17 @@
-import React from "react";
+// import React from "react";
 
-function ToggleButton({ isToggle, setIsToggle }) {
-  return (
-    <button
-      onClick={() => {
-        const nextToggle = !isToggle;
-        setIsToggle(nextToggle);
-      }}
-    >
-      Toggle Intro
-    </button>
-  );
-}
-export default ToggleButton;
+// function ToggleButton({ initial_value }) {
+//   const [toggle, setToggle] = React.useState(initial_value);
+
+//   return (
+//     <button
+//       onClick={() => {
+//         const nextToggle = !toggle;
+//         setToggle(nextToggle);
+//       }}
+//     >
+//       Toggle Intro
+//     </button>
+//   );
+// }
+// export default ToggleButton;
