@@ -83,14 +83,25 @@ h6 {
   src: url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Afacad";
+  src: url("./assets/fonts/Afacad-Regular.ttf") format("truetype");
+}
+
 /* CSS Variables */
 
 :root {
+  /* layout width */
+  --layout-max-width: 1028px; /* 4 x 257 = 1028 */
+  --para-max-width: 700px; /* 4 x 175 = 700 */
+
   /* colors */
   --text-color-primary: #333333;
   --bg-color-primary: #f0f0f0;
+  --text-highlight-color: #0000ff;
 
   /* typography */
+  --logo-font: "Afacad", sans-serif;
   --heading-font: "Bitter", serif;
   --text-font: "Montserrat", sans-serif;
   --text-font-weight: 500; /* Since "Montserrat" is a light font. */
@@ -143,11 +154,6 @@ body {
   font-weight: var(--text-font-weight);
 }
 
-.wrapper {
-  max-width: 1028px; /* 4 x 257 = 1028 */
-  margin: auto;
-}
-
 h1,
 h2,
 h3,
@@ -176,35 +182,35 @@ h1 {
 h2 {
   font-size: var(--type-size-xl);
   line-height: var(--type-height-xl);
+  padding-top: var(--space-5);
 }
 
 h3 {
   font-size: var(--type-size-lg);
   line-height: var(--type-height-lg);
+  padding-top: var(--space-4);
 }
 
 h4 {
   font-size: var(--type-size-md);
   line-height: var(--type-height-md);
+  padding-top: var(--space-3);
 }
 
 h5 {
   font-size: var(--type-size-sm);
   line-height: var(--type-height-sm);
+  padding-top: var(--space-2);
 }
 
 h6 {
   font-size: var(--type-size-xs);
   line-height: var(--type-height-xs);
+  padding-top: var(--space-1);
 }
 
 p {
-  max-width: 700px;
+  max-width: var(--para-max-width);
   font-size: var(--type-size-sm);
   line-height: var(--type-height-sm);
 }
-/* 
-.btn.primary {
-  border-radius: var(--space-1);
-  background-color: var(--color-one);
-} */

@@ -1,43 +1,30 @@
 import React from "react";
 import Button from "./Button";
+import styled from "styled-components";
+import space from "../utils/space";
+
+const IntroWarpper = styled.div`
+  max-width: var(--layout-max-width);
+  margin: ${space(20)}px auto;
+`;
 
 function HomeIntro() {
   return (
-    <div className="wrapper">
-      <h1>Hey there!</h1>
-      <p>Wait some more time for an awesome react content.</p>
+    <IntroWarpper>
+      <h1>
+        This is my {/* Prototype Hub || Portfolio || Official Blog */}Official
+        Blog!
+      </h1>
+      <p>Welcome to my full-stack React-based website!</p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum
-        iste nihil ab totam corrupti quidem. Molestiae, cumque omnis fugit, id
-        aliquam nisi voluptate, ea et similique mollitia harum assumenda!
+        I plan to use this platform to test and showcase my React skills. Here,
+        I will experiment with my learnings and share the outcomes in a reusable
+        format—what I like to call "prototypes." If time permits, I’ll also
+        publish new articles on React, JavaScript, and other web development
+        topics.
       </p>
-      <Button type={"primary"}>Get started!</Button>
-      <h2>Lorem ipsum dolor sit amet consectetur</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum
-        iste nihil ab totam corrupti quidem. Molestiae, cumque omnis fugit, id
-        aliquam nisi voluptate, ea et similique mollitia harum assumenda!
-      </p>
-      <h3>Lorem ipsum dolor sit amet consectetur</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum
-        iste nihil ab totam corrupti quidem. Molestiae, cumque omnis fugit, id
-        aliquam nisi voluptate, ea et similique mollitia harum assumenda!
-      </p>
-      <h4>Lorem ipsum dolor sit amet consectetur</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum
-        iste nihil ab totam corrupti quidem. Molestiae, cumque omnis fugit, id
-        aliquam nisi voluptate, ea et similique mollitia harum assumenda!
-      </p>
-      <h5>Lorem ipsum dolor sit amet consectetur</h5>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eum
-        iste nihil ab totam corrupti quidem. Molestiae, cumque omnis fugit, id
-        aliquam nisi voluptate, ea et similique mollitia harum assumenda!
-      </p>
-      <h6>Lorem ipsum dolor sit amet consectetur</h6>
-    </div>
+      {/* <Button type={"primary"}>Get started!</Button> */}
+    </IntroWarpper>
   );
 }
 export default HomeIntro;
