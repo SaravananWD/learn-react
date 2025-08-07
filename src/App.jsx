@@ -1,12 +1,17 @@
 import React from "react";
 import Header from "./components/Header";
 import HomeIntro from "./components/HomeIntro";
+import styled from "styled-components";
 
 export default function App() {
   return (
-    <div>
+    <StyledWrapper>
       <Header></Header>
       <HomeIntro />
-    </div>
+    </StyledWrapper>
   );
 }
+
+const StyledWrapper = styled.div`
+  padding: 0 var(--space-4);
+`;
