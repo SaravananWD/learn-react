@@ -36,7 +36,7 @@ const Logo = styled.div`
 const Tagline = styled.div`
   font-weight: 600;
   .highlight {
-    color: var(--text-highlight-color);
+    color: var(--color-accent);
   }
 `;
 

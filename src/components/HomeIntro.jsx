@@ -23,7 +23,7 @@ function HomeIntro() {
         publish new articles on React, JavaScript, and other web development
         topics.
       </p>
-      {/* <Button type={"primary"}>Get started!</Button> */}
+      <Button>Get started!</Button>
     </IntroWarpper>
   );
 }
