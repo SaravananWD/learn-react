@@ -101,7 +101,6 @@ h6 {
   --text-highlight-color: #0000ff; */
 
   /* color palette */
-
   --color-primary: #0000dd;
   --color-secondary: #333333;
   --color-accent: #0000ff;
@@ -137,20 +136,6 @@ h6 {
   --space-6: 24px;
   --space-7: 28px;
   --space-8: 32px;
-
-  /* 
-  default         diff      adjusted      line-height
-  h1: 38.4        -0        40            48 
-  h2: 28.8        -9.6      32            44
-  h3: 22.464      -6.336    24            36
-  h4: 19.2        -3.264    20            32
-  h5: 15.936      -3.264    16            28
-  h6: 12.864      -3.072    12            16
-  */
-
-  /* 
-  variable names uses a --<element>-<property>-<variation> format. Eg. --type-size-sm
-  */
 
   /* transitions */
   --bg-transition: background 0.3s;
