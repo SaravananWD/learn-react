@@ -75,17 +75,17 @@ h6 {
 
 @font-face {
   font-family: "Bitter";
-  src: url("./assets/fonts/Bitter-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Bitter-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Afacad";
-  src: url("./assets/fonts/Afacad-Regular.ttf") format("truetype");
+  src: url("../assets/fonts/Afacad-Regular.ttf") format("truetype");
 }
 
 /* CSS Variables */

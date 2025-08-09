@@ -1,6 +1,8 @@
+"use-client";
+
 import React from "react";
-import space from "../utils/space";
 import styled from "styled-components";
+import space from "@/utils/space";
 
 function Button({ children }) {
   return <StyledButton>{children}</StyledButton>;

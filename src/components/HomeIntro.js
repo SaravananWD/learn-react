@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
-import Button from "./Button";
 import styled from "styled-components";
-import space from "../utils/space";
+import Button from "@/components/Button";
+import space from "@/utils/space";
+import Link from "next/link";
 
 const IntroWarpper = styled.div`
   max-width: var(--layout-max-width);
@@ -23,7 +25,9 @@ function HomeIntro() {
         publish new articles on React, JavaScript, and other web development
         topics.
       </p>
-      <Button>Get started!</Button>
+      <Link href="/about">
+        <Button>Get started!</Button>
+      </Link>
     </IntroWarpper>
   );
 }
