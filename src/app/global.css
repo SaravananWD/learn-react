@@ -103,23 +103,18 @@ h6 {
   0000aa */
 
   /* color palette */
-  --color-primary: ; /* hsl(240deg 100% 43.33%) */
-  --color-primary-dark: ;
-  --color-primary-darker: ;
-  --color-primary-light: ;
-  --color-primary-lighter: ;
-  --color-secondary: ;
-  --color-accent: ;
-  --color-bg: #f5f5f5;
-  --color-text: #111;
-  --color-muted: #333333;
-  --color-surface: #e7e7e7;
-
-  --color-blue: hsl(240deg 100% 43.33%); /* #0000dd */
-  --color-blue-dark: hsl(240deg 100% 33%);
-  --color-blue-darker: hsl(240deg 100% 26.67%);
-  --color-blue-light: hsl(240deg 100% 95%); /*  #e5e5ff */
-  --color-blue-disabled: hsl(240 25% 80% / 1); /* #bfbfd9 */
+  --color-primary: hsl(240deg 100% 43.33%); /* 0000dd */
+  --color-primary-dark: hsl(240deg 100% 33%);
+  --color-primary-darker: hsl(240deg 100% 26.67%);
+  --color-primary-light: hsl(240deg 100% 90%); /*  e5e5ff */
+  --color-primary-lighter: hsl(240 100% 95%);
+  --color-disabled: hsl(240 25% 80%); /* bfbfd9 */
+  --color-secondary: #7d25ad; /* adjusted for contrast ratio from: hsl(279, 80%, 44%); */
+  --color-accent: #b33b00; /* adjusted for contrast ratio from: hsl(20, 80%, 44%); */
+  --color-bg: hsl(0, 0%, 96%);
+  --color-text: hsl(0, 0%, 7%);
+  --color-muted: hsl(210, 10%, 40%);
+  --color-surface: hsl(0, 0%, 91%);
 
   /* typography */
   --logo-font: "Afacad", sans-serif;

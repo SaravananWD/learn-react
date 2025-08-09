@@ -20,6 +20,6 @@ const StyledButton = styled.button`
   transition: var(--bg-transition);
 
   &:hover {
-    background-color: var(--color-accent);
+    background-color: var(--color-primary-dark);
   }
 `;

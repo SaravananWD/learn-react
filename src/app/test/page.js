@@ -4,9 +4,10 @@ import React from "react";
 import GenerateElements from "@/components/GenerateElements";
 
 const STYLES = [
-  "color-primary",
-  "color-primary-dark",
   "color-primary-darker",
+  "color-primary-dark",
+
+  "color-primary",
   "color-primary-light",
   "color-primary-lighter",
   "color-secondary",
@@ -19,23 +20,12 @@ const STYLES = [
 
 function TestCSS() {
   return (
-    <Element>
+    <div>
       {STYLES.map((style) => {
-        <GenerateElements styleType={style} />;
+        return <GenerateElements key={style} styleType={style} />;
       })}
-    </Element>
+    </div>
   );
 }
 
 export default TestCSS;
-
-const Element = styled.div`
-  display: flex;
-  justify-content: space-around;
-
-  align-items: center;
-
-  p {
-    margin: 0;
-  }
-`;
