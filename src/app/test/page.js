@@ -1,7 +1,7 @@
 "use client";
 import styled from "styled-components";
 import React from "react";
-import GenerateElements from "@/components/GenerateElements";
+import GenerateElements from "@/app/test/GenerateElements";
 
 const STYLES = [
   "color-primary-darker",

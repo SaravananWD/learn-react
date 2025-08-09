@@ -17,7 +17,6 @@ const StyledButton = styled.button`
   border: 0;
   border-radius: ${space(1)}px;
   margin-top: ${space(1)}px;
-  transition: var(--bg-transition);
 
   &:hover {
     background-color: var(--color-primary-dark);
