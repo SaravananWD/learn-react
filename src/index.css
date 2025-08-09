@@ -98,14 +98,28 @@ h6 {
   /* colors */
   /* --text-color-primary: #333333;
   --bg-color-primary: #f0f0f0;
-  --text-highlight-color: #0000ff; */
+  --text-highlight-color: #0000ff; 
+  
+  0000aa */
 
   /* color palette */
-  --color-primary: #0000dd;
-  --color-secondary: #333333;
-  --color-accent: #0000ff;
+  --color-primary: ; /* hsl(240deg 100% 43.33%) */
+  --color-primary-dark: ;
+  --color-primary-darker: ;
+  --color-primary-light: ;
+  --color-primary-lighter: ;
+  --color-secondary: ;
+  --color-accent: ;
   --color-bg: #f5f5f5;
-  --color-text: #222222;
+  --color-text: #111;
+  --color-muted: #333333;
+  --color-surface: #e7e7e7;
+
+  --color-blue: hsl(240deg 100% 43.33%); /* #0000dd */
+  --color-blue-dark: hsl(240deg 100% 33%);
+  --color-blue-darker: hsl(240deg 100% 26.67%);
+  --color-blue-light: hsl(240deg 100% 95%); /*  #e5e5ff */
+  --color-blue-disabled: hsl(240 25% 80% / 1); /* #bfbfd9 */
 
   /* typography */
   --logo-font: "Afacad", sans-serif;
@@ -136,9 +150,16 @@ h6 {
   --space-6: 24px;
   --space-7: 28px;
   --space-8: 32px;
+  --space-9: 36px;
+  --space-10: 40px;
+
+  /* radius */
+  --radius-md: 8px;
 
   /* transitions */
   --bg-transition: background 0.3s;
+  --transition-fast: 150ms ease;
+  --transition-slow: 300ms ease;
 }
 
 /* Basic Settings */
