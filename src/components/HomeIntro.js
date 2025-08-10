@@ -8,6 +8,7 @@ import Link from "next/link";
 const IntroWarpper = styled.div`
   max-width: var(--layout-max-width);
   margin: ${space(20)}px auto;
+  padding: 0 ${space(3)}px;
 `;
 
 function HomeIntro() {
