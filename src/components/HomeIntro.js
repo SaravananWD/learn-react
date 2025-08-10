@@ -6,19 +6,9 @@ import space from "@/utils/space";
 import Link from "next/link";
 import { device } from "@/style/breakpoints";
 
-const IntroWarpper = styled.div`
-  max-width: var(--layout-max-width);
-  margin: ${space(10)}px auto;
-  padding: 0 ${space(3)}px;
-
-  @media ${device.laptop} {
-    margin: ${space(20)}px auto;
-  }
-`;
-
 function HomeIntro() {
   return (
-    <IntroWarpper>
+    <IntroWrapper>
       <h1>
         This is my {/* Prototype Hub || Portfolio || Official Blog */}Official
         Blog!
@@ -32,9 +22,20 @@ function HomeIntro() {
         topics.
       </p>
       <Link href="/about">
-        <Button>Get started!</Button>
+        <Button mb={5}>Get started!</Button>
       </Link>
-    </IntroWarpper>
+    </IntroWrapper>
   );
 }
 export default HomeIntro;
+
+const IntroWrapper = styled.div`
+  max-width: var(--layout-max-width);
+  margin: ${space(12)}px auto 0 auto;
+  margin-bottom: 0;
+  padding: 0 ${space(3)}px;
+
+  @media ${device.laptop} {
+    margin: ${space(20)}px auto 0 auto;
+  }
+`;

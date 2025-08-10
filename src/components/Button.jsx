@@ -4,8 +4,8 @@ import React from "react";
 import styled from "styled-components";
 import space from "@/utils/space";
 
-function Button({ children }) {
-  return <StyledButton>{children}</StyledButton>;
+function Button({ children, mb }) {
+  return <StyledButton mb={mb}>{children}</StyledButton>;
 }
 export default Button;
 
@@ -17,6 +17,7 @@ const StyledButton = styled.button`
   border: 0;
   border-radius: ${space(1)}px;
   margin-top: ${space(1)}px;
+  margin-bottom: ${({ mb }) => (typeof mb === "number" ? `${space(5)}px` : 0)};
 
   &:hover {
     background-color: var(--color-primary-dark);

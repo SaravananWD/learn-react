@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="debug">
+    <html lang="en" className="">
       <body>
         <StyledComponentsRegistry>
           <Header></Header>
