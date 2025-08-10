@@ -4,11 +4,16 @@ import styled from "styled-components";
 import Button from "@/components/Button";
 import space from "@/utils/space";
 import Link from "next/link";
+import { device } from "@/style/breakpoints";
 
 const IntroWarpper = styled.div`
   max-width: var(--layout-max-width);
-  margin: ${space(20)}px auto;
+  margin: ${space(10)}px auto;
   padding: 0 ${space(3)}px;
+
+  @media ${device.laptop} {
+    margin: ${space(20)}px auto;
+  }
 `;
 
 function HomeIntro() {

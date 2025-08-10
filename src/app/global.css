@@ -95,13 +95,6 @@ h6 {
   --layout-max-width: 1028px; /* 4 x 257 = 1028 */
   --para-max-width: 700px; /* 4 x 175 = 700 */
 
-  /* colors */
-  /* --text-color-primary: #333333;
-  --bg-color-primary: #f0f0f0;
-  --text-highlight-color: #0000ff; 
-  
-  0000aa */
-
   /* color palette */
   --color-primary: hsl(240deg 100% 43.33%); /* 0000dd */
   --color-primary-dark: hsl(240deg 100% 33%);
