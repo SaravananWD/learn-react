@@ -6,10 +6,10 @@ import GenerateElements from "@/app/test/GenerateElements";
 const STYLES = [
   "color-primary-darker",
   "color-primary-dark",
-
   "color-primary",
   "color-primary-light",
   "color-primary-lighter",
+  "color-disabled",
   "color-secondary",
   "color-accent",
   "color-bg",

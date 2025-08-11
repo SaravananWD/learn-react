@@ -21,7 +21,7 @@ function HomeIntro() {
         publish new articles on React, JavaScript, and other web development
         topics.
       </p>
-      <Link href="/about">
+      <Link href="/test">
         <Button mb={5}>Get started!</Button>
       </Link>
     </IntroWrapper>
