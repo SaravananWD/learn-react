@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Button from "@/components/Button";
 import space from "@/utils/space";
 import Link from "next/link";
-import { device } from "@/style/breakpoints";
+import { device } from "@/styles/breakpoints";
 
 function ShortProtosList() {
   return (

@@ -2,7 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 import space from "@/utils/space";
-import { device } from "@/style/breakpoints";
+import { device } from "@/styles/breakpoints";
 
 function Header() {
   return (
