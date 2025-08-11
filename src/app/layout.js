@@ -1,6 +1,7 @@
 import StyledComponentsRegistry from "@/lib/StyledComponentsRegistry";
 import "@/styles/global.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Saravanan Devaraj",
@@ -13,8 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className="">
       <body>
         <StyledComponentsRegistry>
-          <Header></Header>
+          <Header />
           {children}
+          <Footer />
         </StyledComponentsRegistry>
       </body>
     </html>

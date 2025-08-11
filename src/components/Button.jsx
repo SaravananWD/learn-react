@@ -1,11 +1,10 @@
 "use-client";
-
 import React from "react";
 import styled from "styled-components";
 import space from "@/utils/space";
 
-function Button({ children, mb }) {
-  return <StyledButton mb={mb}>{children}</StyledButton>;
+function Button({ children, mb = 0 }) {
+  return <StyledButton $mb={mb}>{children}</StyledButton>;
 }
 export default Button;
 
@@ -17,7 +16,7 @@ const StyledButton = styled.button`
   border: 0;
   border-radius: ${space(1)}px;
   margin-top: ${space(1)}px;
-  margin-bottom: ${({ mb }) => (typeof mb === "number" ? `${space(5)}px` : 0)};
+  margin-bottom: ${({ $mb = 0 }) => `${$mb}px`};
 
   &:hover {
     background-color: var(--color-primary-dark);
