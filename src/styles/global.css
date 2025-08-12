@@ -205,9 +205,9 @@ h4 {
 
 h5 {
   font-size: var(--type-size-sm);
-  line-height: var(--type-height-sm);
+  line-height: var(--type-height-xs);
   padding-top: var(--space-2);
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-4);
 }
 
 h6 {

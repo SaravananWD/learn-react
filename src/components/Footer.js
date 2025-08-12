@@ -9,44 +9,46 @@ function Footer() {
   return (
     <StyledFooter>
       <FooterWrapper>
-        <LinkGroup>
-          <h5>Learn React</h5>
-          <ul>
-            <li>
-              <a href="#">Articles</a>
-            </li>
-            <li>
-              <a href="#">Prototypes</a>
-            </li>
-            <li>
-              <a href="#">GitHub</a>
-            </li>
-          </ul>
-        </LinkGroup>
-        <LinkGroup>
-          <h5>Hire Me</h5>
-          <ul>
-            <li>
-              <a href="#">Portfolio</a>
-            </li>
-            <li>
-              <a href="#">Resume</a>
-            </li>
-          </ul>
-        </LinkGroup>
-        <LinkGroup>
-          <h5>Site Info</h5>
-          <ul>
-            <li>
-              <a href="#">About Me</a>
-            </li>
+        <FooterLinks>
+          <LinkGroup>
+            <h5>Learn React</h5>
+            <ul>
+              <li>
+                <a href="#">Articles</a>
+              </li>
+              <li>
+                <a href="#">Prototypes</a>
+              </li>
+              <li>
+                <a href="#">GitHub</a>
+              </li>
+            </ul>
+          </LinkGroup>
+          <LinkGroup>
+            <h5>Hire Me</h5>
+            <ul>
+              <li>
+                <a href="#">Portfolio</a>
+              </li>
+              <li>
+                <a href="#">Resume</a>
+              </li>
+            </ul>
+          </LinkGroup>
+          <LinkGroup>
+            <h5>Site Info</h5>
+            <ul>
+              <li>
+                <a href="#">About Me</a>
+              </li>
 
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </LinkGroup>
-        <p className="copy">&copy; Saravanan.dev</p>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </LinkGroup>
+        </FooterLinks>
+        <Copy>&copy; Saravanan.dev</Copy>
       </FooterWrapper>
     </StyledFooter>
   );
@@ -56,35 +58,26 @@ export default Footer;
 
 // styled components
 
-const LinkGroup = styled.div``;
+const FooterLinks = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: ${space(0)}px ${space(10)}px;
+  flex-wrap: wrap;
 
-const StyledFooter = styled.footer`
-  /* display: flex;
-  flex-direction: column;
-  gap: ${space(2)}px; 
-  align-items: flex-start; */
-  padding: ${space(10)}px ${space(3)}px 0;
-  margin: auto;
-
-  @media ${device.laptop} {
-    /* flex-direction: row;
-    justify-content: space-between; */
-    /* align-items: center; */
-    max-width: var(--layout-max-width);
+  @media ${device.tablet} {
+    flex-direction: row;
+    justify-content: flex-start;
   }
 `;
 
-const FooterWrapper = styled.div`
-  border-top: 2px solid var(--color-text);
-  padding: ${space(4)}px 0;
-  color: var(--color-text);
-
+const LinkGroup = styled.div`
   h5 {
     color: var(--color-text);
     padding-top: 0;
+    line-height: ${space(5)}px;
+    margin-bottom: ${space(3)}px;
   }
 
-  p,
   ul,
   li {
     margin: 0;
@@ -109,11 +102,30 @@ const FooterWrapper = styled.div`
   a:hover {
     text-decoration: underline;
   }
+`;
 
-  .copy {
-    color: var(--color-muted);
-    font-family: var(--logo-font);
-    font-size: ${space(4)}px;
-    line-height: ${space(5)}px;
+const StyledFooter = styled.footer`
+  padding: ${space(10)}px ${space(3)}px 0;
+  margin: auto;
+
+  @media ${device.laptop} {
+    max-width: var(--layout-max-width);
   }
+`;
+
+const FooterWrapper = styled.div`
+  border-top: 2px solid var(--color-text);
+  padding: ${space(4)}px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: ${space(0)}px ${space(10)}px;
+`;
+
+const Copy = styled.p`
+  color: var(--color-muted);
+  font-family: var(--logo-font);
+  font-size: ${space(4)}px;
+  line-height: ${space(5)}px;
+  margin: 0;
 `;
