@@ -40,7 +40,7 @@ const StyledHeader = styled.header`
   }
 `;
 
-const Logo = styled.div`
+export const Logo = styled.div`
   font-family: var(--logo-font);
   font-size: ${space(6)}px;
   line-height: ${space(9)}px;

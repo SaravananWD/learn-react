@@ -15,8 +15,8 @@ const StyledButton = styled.button`
   padding: ${space(2)}px ${space(5)}px;
   border: 0;
   border-radius: ${space(1)}px;
-  margin-top: ${space(1)}px;
-  margin-bottom: ${({ $mb = 0 }) => `${$mb}px`};
+  margin-top: ${space(1)}px; /* added to balance mb spacing of H1 */
+  margin-bottom: ${({ $mb = 0 }) => ($mb > 0 ? `${space($mb)}px` : `${$mb}px`)};
 
   &:hover {
     background-color: var(--color-primary-dark);

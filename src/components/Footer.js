@@ -3,26 +3,52 @@ import React from "react";
 import styled from "styled-components";
 import space from "@/utils/space";
 import { device } from "@/styles/breakpoints";
+import { Logo } from "./Header";
 
 function Footer() {
   return (
-    <Wrapper>
-      <StyledFooter>
-        <h5>Links</h5>
-        <ul>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Prototypes</a>
-          </li>
-          <li>
-            <a href="#">Articles</a>
-          </li>
-        </ul>
-        <p>&copy; Saravanan.dev</p>
-      </StyledFooter>
-    </Wrapper>
+    <StyledFooter>
+      <FooterWrapper>
+        <LinkGroup>
+          <h5>Learn React</h5>
+          <ul>
+            <li>
+              <a href="#">Articles</a>
+            </li>
+            <li>
+              <a href="#">Prototypes</a>
+            </li>
+            <li>
+              <a href="#">GitHub</a>
+            </li>
+          </ul>
+        </LinkGroup>
+        <LinkGroup>
+          <h5>Hire Me</h5>
+          <ul>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Resume</a>
+            </li>
+          </ul>
+        </LinkGroup>
+        <LinkGroup>
+          <h5>Site Info</h5>
+          <ul>
+            <li>
+              <a href="#">About Me</a>
+            </li>
+
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </LinkGroup>
+        <p className="copy">&copy; Saravanan.dev</p>
+      </FooterWrapper>
+    </StyledFooter>
   );
 }
 
@@ -30,7 +56,9 @@ export default Footer;
 
 // styled components
 
-const Wrapper = styled.footer`
+const LinkGroup = styled.div``;
+
+const StyledFooter = styled.footer`
   /* display: flex;
   flex-direction: column;
   gap: ${space(2)}px; 
@@ -46,7 +74,7 @@ const Wrapper = styled.footer`
   }
 `;
 
-const StyledFooter = styled.div`
+const FooterWrapper = styled.div`
   border-top: 2px solid var(--color-text);
   padding: ${space(4)}px 0;
   color: var(--color-text);
@@ -80,5 +108,12 @@ const StyledFooter = styled.div`
 
   a:hover {
     text-decoration: underline;
+  }
+
+  .copy {
+    color: var(--color-muted);
+    font-family: var(--logo-font);
+    font-size: ${space(4)}px;
+    line-height: ${space(5)}px;
   }
 `;
