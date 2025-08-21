@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Saravanan Devaraj",
   description:
-    "Saravanan's React prototype hub app for experimentation and sharing of react knowledge.",
+    "Saravanan's React prototype hub app for experimentation, demonstration and sharing of react knowledge.",
 };
 
 export default function RootLayout({ children }) {
